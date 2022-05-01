@@ -40,6 +40,10 @@ class RickMortyViewController: UIViewController {
     private func drawDesign() {
         tableView.delegate = self
         tableView.dataSource = self
+        
+        //TODO: TableViewCell heightını static değilde otomatik dinamik yap!!
+        tableView.rowHeight = 150
+        tableView.register(RickMortyTableViewCell.self, forCellReuseIdentifier: RickMortyTableViewCell.Identifier.custom.rawValue)
         DispatchQueue.main.async {
             self.view.backgroundColor = .white
             self.labelTitle.text = "Rick Morty"
@@ -69,8 +73,9 @@ extension RickMortyViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = results[indexPath.row].name ?? ""
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RickMortyTableViewCell.Identifier.custom.rawValue) as? RickMortyTableViewCell
+        else { return UITableViewCell() }
+        cell.saveModel(model: results[indexPath.row])
         return cell
     }
     
