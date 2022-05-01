@@ -14,6 +14,8 @@
 		E8271FB9281D5595008EE4F3 /* RickMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8271FB8281D5595008EE4F3 /* RickMortyViewController.swift */; };
 		E8271FBB281D61F5008EE4F3 /* RickMortyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8271FBA281D61F5008EE4F3 /* RickMortyService.swift */; };
 		E8271FBD281D6209008EE4F3 /* RickMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8271FBC281D6209008EE4F3 /* RickMortyModel.swift */; };
+		E8271FBF281D85C4008EE4F3 /* RickMortyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8271FBE281D85C4008EE4F3 /* RickMortyViewModel.swift */; };
+		E8271FC2281EB570008EE4F3 /* RickMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8271FC1281EB570008EE4F3 /* RickMortyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E8271FB8281D5595008EE4F3 /* RickMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyViewController.swift; sourceTree = "<group>"; };
 		E8271FBA281D61F5008EE4F3 /* RickMortyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyService.swift; sourceTree = "<group>"; };
 		E8271FBC281D6209008EE4F3 /* RickMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyModel.swift; sourceTree = "<group>"; };
+		E8271FBE281D85C4008EE4F3 /* RickMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyViewModel.swift; sourceTree = "<group>"; };
+		E8271FC1281EB570008EE4F3 /* RickMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		E8271FB5281D5571008EE4F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E8271FBE281D85C4008EE4F3 /* RickMortyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 		E8271FB6281D5577008EE4F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E8271FC0281EB52A008EE4F3 /* TableViewCell */,
 				E8271FB8281D5595008EE4F3 /* RickMortyViewController.swift */,
 			);
 			path = View;
@@ -129,6 +135,14 @@
 				E8271FBA281D61F5008EE4F3 /* RickMortyService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		E8271FC0281EB52A008EE4F3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E8271FC1281EB570008EE4F3 /* RickMortyTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8271FC2281EB570008EE4F3 /* RickMortyTableViewCell.swift in Sources */,
 				E8271FBD281D6209008EE4F3 /* RickMortyModel.swift in Sources */,
 				E817A2A1281D516C00802BC0 /* AppDelegate.swift in Sources */,
 				E8271FBB281D61F5008EE4F3 /* RickMortyService.swift in Sources */,
 				E8271FB9281D5595008EE4F3 /* RickMortyViewController.swift in Sources */,
+				E8271FBF281D85C4008EE4F3 /* RickMortyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
