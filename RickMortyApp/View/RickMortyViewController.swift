@@ -63,8 +63,6 @@ extension RickMortyViewController: RickMortyOutput {
         results = values
         tableView.reloadData()
     }
-    
-    
 }
 
 extension RickMortyViewController: UITableViewDelegate, UITableViewDataSource {
@@ -79,7 +77,9 @@ extension RickMortyViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
 }
 
 extension RickMortyViewController {

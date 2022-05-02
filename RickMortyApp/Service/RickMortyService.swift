@@ -35,7 +35,4 @@ struct RickMortyService: IRickMortyService {
             
         }
     }
-    
-    
-    
 }

@@ -9,9 +9,27 @@ import UIKit
 import AlamofireImage
 
 class RickMortyTableViewCell: UITableViewCell {
-    private let customImage: UIImageView = UIImageView()
-    private let customTitle: UILabel = UILabel()
-    private let customDescription: UILabel = UILabel()
+    
+    private lazy var customImage: UIImageView = {
+        let imageview = UIImageView(frame: .zero)
+        imageview.translatesAutoresizingMaskIntoConstraints = false
+        imageview.layer.cornerRadius = 10
+        imageview.clipsToBounds = true
+        return imageview
+    }()
+    
+    private lazy var customTitle: UILabel = {
+        let title = UILabel(frame: .zero)
+        title.translatesAutoresizingMaskIntoConstraints = false
+        return title
+    }()
+    
+    private let customDescription: UILabel = {
+        let description = UILabel(frame: .zero)
+        description.translatesAutoresizingMaskIntoConstraints = false
+        return description
+    }()
+    
     private let randomImage: String = "https://picsum.photos/id/237/200/300"
 
     enum Identifier: String {
@@ -40,22 +58,21 @@ class RickMortyTableViewCell: UITableViewCell {
         customDescription.font = .italicSystemFont(ofSize: 14)
         
         customImage.snp.makeConstraints { make in
-            make.height.equalTo(100)
-            make.top.equalTo(contentView)
+            make.height.equalTo(150)
+            make.top.equalToSuperview()
             make.left.right.equalToSuperview()
         }
         
         customTitle.snp.makeConstraints { make in
             make.top.equalTo(customImage.snp.bottom).offset(10)
-            make.left.right.equalTo(customImage)
+            make.left.right.equalToSuperview()
         }
         
         customDescription.snp.makeConstraints { make in
-            make.top.equalTo(customTitle).offset(5)
+            make.top.equalTo(customTitle.snp.bottom)
             make.left.right.equalTo(contentView)
-            make.bottom.equalToSuperview()
+            make.height.equalTo(10)
         }
-        
     }
     
     func saveModel(model: Result) {

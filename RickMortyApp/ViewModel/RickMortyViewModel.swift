@@ -27,7 +27,6 @@ final class RickMortyViewModel: IRickMortyViewModel {
     
     var rickMortyOutput: RickMortyOutput?
     
-    
     var rickMortyCharacters: [Result] = []
     private var isLoading: Bool = false
     let rickMortyService: IRickMortyService
@@ -48,9 +47,5 @@ final class RickMortyViewModel: IRickMortyViewModel {
     func changeLoading() {
         isLoading = !isLoading
         rickMortyOutput?.changeLoading(isLoading: isLoading)
-    }
-    
-    
-    
-    
+    } 
 }

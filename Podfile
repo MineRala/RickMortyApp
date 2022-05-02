@@ -7,7 +7,6 @@ target 'RickMortyApp' do
 
   # Pods for RickMortyApp
   pod 'SnapKit', '~> 5.6.0'
-  pod 'Kingfisher', '~> 7.0'
   pod 'Alamofire'
   pod 'AlamofireImage', '~> 4.1'
 end

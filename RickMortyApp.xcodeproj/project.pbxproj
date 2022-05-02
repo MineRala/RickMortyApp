@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCDC54A4E67DC09FAA56B09E /* Pods_RickMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771D660F3594F12DACFAD803 /* Pods_RickMortyApp.framework */; };
+		999FD98F366614E7B8BA13B5 /* Pods_RickMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0667FD8892ECD391598A5D4 /* Pods_RickMortyApp.framework */; };
 		E817A2A1281D516C00802BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817A2A0281D516C00802BC0 /* AppDelegate.swift */; };
 		E817A2AA281D516E00802BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E817A2A9281D516E00802BC0 /* Assets.xcassets */; };
 		E817A2AD281D516E00802BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817A2AB281D516E00802BC0 /* LaunchScreen.storyboard */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A78BDC7F5355D3AD32BD36F /* Pods-RickMortyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApp.release.xcconfig"; path = "Target Support Files/Pods-RickMortyApp/Pods-RickMortyApp.release.xcconfig"; sourceTree = "<group>"; };
-		5DA92B2FD8FDD14127B75336 /* Pods-RickMortyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApp.debug.xcconfig"; path = "Target Support Files/Pods-RickMortyApp/Pods-RickMortyApp.debug.xcconfig"; sourceTree = "<group>"; };
-		771D660F3594F12DACFAD803 /* Pods_RickMortyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMortyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		169D417660A59E349A1F6A2C /* Pods-RickMortyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApp.release.xcconfig"; path = "Target Support Files/Pods-RickMortyApp/Pods-RickMortyApp.release.xcconfig"; sourceTree = "<group>"; };
+		BD7A6CECF71A81A9A3700248 /* Pods-RickMortyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApp.debug.xcconfig"; path = "Target Support Files/Pods-RickMortyApp/Pods-RickMortyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D0667FD8892ECD391598A5D4 /* Pods_RickMortyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMortyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E817A29D281D516C00802BC0 /* RickMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E817A2A0281D516C00802BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E817A2A9281D516E00802BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,28 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDC54A4E67DC09FAA56B09E /* Pods_RickMortyApp.framework in Frameworks */,
+				999FD98F366614E7B8BA13B5 /* Pods_RickMortyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B0B3A18BAC8665FC3234A0B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				771D660F3594F12DACFAD803 /* Pods_RickMortyApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DA88AFC8472598A7726C237D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5DA92B2FD8FDD14127B75336 /* Pods-RickMortyApp.debug.xcconfig */,
-				0A78BDC7F5355D3AD32BD36F /* Pods-RickMortyApp.release.xcconfig */,
+				BD7A6CECF71A81A9A3700248 /* Pods-RickMortyApp.debug.xcconfig */,
+				169D417660A59E349A1F6A2C /* Pods-RickMortyApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE18B701373208B07283FA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0667FD8892ECD391598A5D4 /* Pods_RickMortyApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E817A294281D516C00802BC0 = {
@@ -69,7 +69,7 @@
 				E817A29F281D516C00802BC0 /* RickMortyApp */,
 				E817A29E281D516C00802BC0 /* Products */,
 				DA88AFC8472598A7726C237D /* Pods */,
-				2B0B3A18BAC8665FC3234A0B /* Frameworks */,
+				DE18B701373208B07283FA09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,11 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E817A2B1281D516E00802BC0 /* Build configuration list for PBXNativeTarget "RickMortyApp" */;
 			buildPhases = (
-				EDA90B30773B7DBF27338286 /* [CP] Check Pods Manifest.lock */,
+				47FE1C1069CCC4DE8A11827A /* [CP] Check Pods Manifest.lock */,
 				E817A299281D516C00802BC0 /* Sources */,
 				E817A29A281D516C00802BC0 /* Frameworks */,
 				E817A29B281D516C00802BC0 /* Resources */,
-				91F971D855F2A458AD0335ED /* [CP] Embed Pods Frameworks */,
+				1DE5577A27496E8678D2F510 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,7 +213,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		91F971D855F2A458AD0335ED /* [CP] Embed Pods Frameworks */ = {
+		1DE5577A27496E8678D2F510 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,7 +230,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickMortyApp/Pods-RickMortyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDA90B30773B7DBF27338286 /* [CP] Check Pods Manifest.lock */ = {
+		47FE1C1069CCC4DE8A11827A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,7 +398,7 @@
 		};
 		E817A2B2281D516E00802BC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA92B2FD8FDD14127B75336 /* Pods-RickMortyApp.debug.xcconfig */;
+			baseConfigurationReference = BD7A6CECF71A81A9A3700248 /* Pods-RickMortyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,7 +427,7 @@
 		};
 		E817A2B3281D516E00802BC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A78BDC7F5355D3AD32BD36F /* Pods-RickMortyApp.release.xcconfig */;
+			baseConfigurationReference = 169D417660A59E349A1F6A2C /* Pods-RickMortyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
